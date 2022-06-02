@@ -1,0 +1,64 @@
+//top line: 3 underscores printed above each vertical bar
+//vertical loop: bar lines and spaces between each printed 8 times
+//horizontal loop: side lines on left and then 11 dashes
+//top border line printed
+//fence parts printed 4 times with vertical before horizontal
+
+public class computer_ascii_art_code {
+	
+	public static void main(String[] args) {
+		top_line();
+		vertical();
+		horizontal();
+		vertical();
+		horizontal();
+		vertical();
+		horizontal();
+		vertical();
+		horizontal();
+
+	}
+	
+	public static void top_line() {
+		System.out.print(" ___ ");
+		for (int l = 0; l < 4; l++) {
+			for (int k = 1; k <= 11; k++) {
+				System.out.print(" ");
+				//printing spaces for the top border
+			}
+			System.out.print(" ___ ");
+			// making top border line
+		}
+		System.out.println();
+	}
+	
+	
+	public static void vertical() {
+		System.out.print("|   |");
+		for (int l = 0; l < 4; l++) {
+			for (int k = 1; k <= 11; k++) {
+				System.out.print(" ");
+				//printing spaces for the horizontal dashes
+			}
+			System.out.print("|   |");
+			// making vertical fence bar
+		}
+		System.out.println();
+		
+	}
+	
+	
+	public static void horizontal() {
+		System.out.print("|   |");
+		for (int l = 0; l < 4; l++) {
+			for (int j = 1; j <= 11; j++) { 
+				System.out.print("-");
+				//printing horizontal dashes
+			}
+			System.out.print("|   |");
+		}
+		// making horizontal fence loop
+		System.out.println();
+	}
+	
+}
